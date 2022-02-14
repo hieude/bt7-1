@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>nangcao</title>
+	<style type="text/css">
+		.container {
+			width: 600px;
+			background-color: #5BD17D;
+			margin: 0px auto;
+			padding: 10px;
+		}
+		.content {
+			width: 100%;
+		    border: solid blue 0.1px;
+		}
+		.content .menu {
+			width: 30%;
+			border: solid blue 0.1px;
+			height: 35px;
+		}
+		.content .Nhap {
+			width: 60%;
+			border: solid blue 0.1px;
+			height: 30px;
+		}
+		.styles {
+			margin-left: 200px;
+			margin-top: 10px;
+		}
+		.styles button {
+			background-color: green;
+			cursor: pointer;
+		}
+		.container h1 {
+			text-align: center;
+			color: darkred;
+		}
+		.Nhap:hover {
+			background-color: yellow;
+		}
+		.styles button:hover {
+			background-color: red;
+		}
+	</style>
+</head>
+<body><form>
+<div class="container">
+      <h1>Purchase Order Form</h1>
+	<table class="content"> 
+		<p>Product Information</p>
+		<div><tr>
+		<td class="menu">Product:</td>
+		<td>
+			<select required class="Nhap">
+				<option value="">select...</option>
+				<option value="650">Comfort Sleeper</option>
+				<option value="975">Morgan Kids Bed</option>
+				<option value="480">Entertaiment Cabinet</option>
+			</select>
+		</td>
+	   </tr>
+    </div>
+	<div><tr>
+		<td class="menu">Unit Price ($):</td>
+		<td>
+			<input required class="Nhap" type="text" placeholder="0">
+		</td>
+	</tr></div>
+	<div><tr>
+		<td class="menu">Quantity:</td>
+		<td>
+			<input required class="Nhap" type="text" placeholder="0">
+		</td>
+	</tr></div>
+	<div><tr>
+		<td class="menu">Total Price:</td>
+		<td>
+			<input required class="Nhap" type="text" placeholder="0">
+		</td>
+	</tr></div></table>
+	<br></br>
+	<table class="content">
+		<p>Shipping Information</p>
+		<div>
+			<tr >
+				<td class="menu">Full Name:</td>
+				<td><input required class="Nhap" type="text"></td>
+			</tr>
+		</div>
+		<div>
+			<tr>
+				<td class="menu">Shipping Address:</td>
+				<td><input required class="Nhap" type="text"></td>
+			</tr>
+		</div>
+		<div>
+			<tr>
+				<td  class="menu">Credit Card:</td>
+				<td><select required class="Nhap">
+					<option>Select...</option>
+					<option value="650">VISA</option>
+					<option value="975">Master Card</option>
+					<option value="480">American Express</option>
+				</select></td>
+			</tr>
+		</div>
+		<div>
+			<tr>
+				<td class="menu">Credit Card Number:</td>
+				<td class="Nhap"><input required type="number">
+				<input required type="number">
+				<input requiredtype="number"></td>
+			</tr>
+		</div>
+	</table>
+		<div class="styles">
+			<button type="submit">submit</button>
+			<button type="reset">Reset</button>
+		</div>
+</div></form>
+</body>
+</html>

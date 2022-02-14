@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bai tap 2</title>
+	<style type="text/css">
+		.Nhap {
+			background-color: green;
+			color: white;
+			border-radius: 15px;
+			border: solid grey;
+				}
+		table {
+			border: solid black;
+			width: 500px;
+			height: 100px;
+			text-align: center;
+		}
+		body {
+     background-color: red;
+		}
+	</style>
+</head>
+<body>
+<table>
+	<h3>Giai phuong trinh bac 1</h3>
+	<tr>
+		<td>
+			<input class="Nhap" type="button" value="Nhap A" onclick="InputA()">
+			<input class="Nhap" type="button" value="Nhap B" onclick="InputB()">
+			<input class="Nhap" type="button" value="In ket qua" onclick="InputC()">
+		</td>
+	</tr>
+</table>
+<script type="text/javascript">
+	var a,b,sum
+	function InputA() {
+		a=parseFloat(prompt('Nhap gia tri a'))
+	}
+	function InputB() {
+		b=parseFloat(prompt('Nhap gia tri b'))
+	}
+	function InputC() {
+		sum=a+b
+	alert('ket qua'+sum)
+	}
+	
+
+</script>
+</body>
+</html>
